@@ -1,0 +1,28 @@
+id,name,category_id,price
+1,iPhone 14 128GB,1,639.75
+2,iPhone 14 256GB,1,1191.25
+3,iPhone 15 128GB,1,1267.78
+4,iPhone 15 Pro,1,617.32
+5,Samsung Galaxy S23,1,633.45
+6,Samsung Galaxy S23 Ultra,1,1103.89
+7,Google Pixel 8,1,1231.32
+8,Google Pixel 8 Pro,1,882.07
+9,OnePlus 11,1,807.71
+10,Xiaomi 13 Pro,1,965.02
+11,MacBook Pro 13 M2,2,2253.76
+12,MacBook Pro 16 M2 Pro,2,1302.23
+13,MacBook Air M2,2,2896.15
+14,Dell XPS 13 9310,2,1992.32
+15,Dell XPS 15 9520,2,1478.5
+16,HP Spectre x360 14,2,1241.07
+17,Lenovo ThinkPad X1 Carbon,2,2351.45
+18,Asus ZenBook 14 OLED,2,1600.38
+19,Acer Swift 5,2,2337.4
+20,Sony WH-1000XM5,3,525.9
+21,Sony WH-1000XM4,3,523.44
+22,Bose QC45,3,254.59
+23,Bose QC35 II,3,588.03
+24,Apple AirPods Max,3,521.07
+25,Apple AirPods Pro 2,3,589.04
+26,Sennheiser HD 560S,3,267.92
+27,JBL Live 660NC,3,510.16

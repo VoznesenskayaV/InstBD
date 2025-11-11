@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 14 128GB",
+    "category_id": 1,
+    "price": 639.75
+  },
+  {
+    "id": 2,
+    "name": "iPhone 14 256GB",
+    "category_id": 1,
+    "price": 1191.25
+  },
+  {
+    "id": 3,
+    "name": "iPhone 15 128GB",
+    "category_id": 1,
+    "price": 1267.78
+  },
+  {
+    "id": 4,
+    "name": "iPhone 15 Pro",
+    "category_id": 1,
+    "price": 617.32
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy S23",
+    "category_id": 1,
+    "price": 633.45
+  },
+  {
+    "id": 6,
+    "name": "Samsung Galaxy S23 Ultra",
+    "category_id": 1,
+    "price": 1103.89
+  },
+  {
+    "id": 7,
+    "name": "Google Pixel 8",
+    "category_id": 1,
+    "price": 1231.32
+  },
+  {
+    "id": 8,
+    "name": "Google Pixel 8 Pro",
+    "category_id": 1,
+    "price": 882.07
+  },
+  {
+    "id": 9,
+    "name": "OnePlus 11",
+    "category_id": 1,
+    "price": 807.71
+  },
+  {
+    "id": 10,
+    "name": "Xiaomi 13 Pro",
+    "category_id": 1,
+    "price": 965.02
+  },
+  {
+    "id": 11,
+    "name": "MacBook Pro 13 M2",
+    "category_id": 2,
+    "price": 2253.76
+  },
+  {
+    "id": 12,
+    "name": "MacBook Pro 16 M2 Pro",
+    "category_id": 2,
+    "price": 1302.23
+  },
+  {
+    "id": 13,
+    "name": "MacBook Air M2",
+    "category_id": 2,
+    "price": 2896.15
+  },
+  {
+    "id": 14,
+    "name": "Dell XPS 13 9310",
+    "category_id": 2,
+    "price": 1992.32
+  },
+  {
+    "id": 15,
+    "name": "Dell XPS 15 9520",
+    "category_id": 2,
+    "price": 1478.5
+  },
+  {
+    "id": 16,
+    "name": "HP Spectre x360 14",
+    "category_id": 2,
+    "price": 1241.07
+  },
+  {
+    "id": 17,
+    "name": "Lenovo ThinkPad X1 Carbon",
+    "category_id": 2,
+    "price": 2351.45
+  },
+  {
+    "id": 18,
+    "name": "Asus ZenBook 14 OLED",
+    "category_id": 2,
+    "price": 1600.38
+  },
+  {
+    "id": 19,
+    "name": "Acer Swift 5",
+    "category_id": 2,
+    "price": 2337.4
+  },
+  {
+    "id": 20,
+    "name": "Sony WH-1000XM5",
+    "category_id": 3,
+    "price": 525.9
+  },
+  {
+    "id": 21,
+    "name": "Sony WH-1000XM4",
+    "category_id": 3,
+    "price": 523.44
+  },
+  {
+    "id": 22,
+    "name": "Bose QC45",
+    "category_id": 3,
+    "price": 254.59
+  },
+  {
+    "id": 23,
+    "name": "Bose QC35 II",
+    "category_id": 3,
+    "price": 588.03
+  },
+  {
+    "id": 24,
+    "name": "Apple AirPods Max",
+    "category_id": 3,
+    "price": 521.07
+  },
+  {
+    "id": 25,
+    "name": "Apple AirPods Pro 2",
+    "category_id": 3,
+    "price": 589.04
+  },
+  {
+    "id": 26,
+    "name": "Sennheiser HD 560S",
+    "category_id": 3,
+    "price": 267.92
+  },
+  {
+    "id": 27,
+    "name": "JBL Live 660NC",
+    "category_id": 3,
+    "price": 510.16
+  }
+]
