@@ -1,0 +1,88 @@
+services:
+  # MongoDB Service (версия 4.4 - стабильная)
+  mongodb:
+    container_name: mongodb
+    image: mongo:4.4
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongouser
+      MONGO_INITDB_ROOT_PASSWORD: mongopass
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_volume:/data/db
+    networks:
+      - db_network
+    restart: unless-stopped
+
+  # Mongo Express Service (Web UI for MongoDB)
+  mongo-express:
+    container_name: mongo-express
+    image: mongo-express:latest
+    environment:
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=mongouser
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=mongopass
+      - ME_CONFIG_BASICAUTH_USERNAME=adminuser
+      - ME_CONFIG_BASICAUTH_PASSWORD=adminpasswd
+      - ME_CONFIG_MONGODB_SERVER=mongodb
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mongodb
+    networks:
+      - db_network
+    restart: unless-stopped
+
+  # PostgreSQL Service (версия 16)
+  postgresql:
+    container_name: postgresql
+    image: postgres:16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: changeme
+      POSTGRES_DB: studpg
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_volume:/var/lib/postgresql/data
+    networks:
+      - db_network
+    restart: unless-stopped
+
+  # pgAdmin Service
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4:latest
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin4@pgadmin.org
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgresql
+    networks:
+      - db_network
+    restart: unless-stopped
+
+  # Jupyter Notebook Service
+  jupyter:
+    container_name: jupyter
+    image: jupyter/scipy-notebook:latest
+    environment:
+      JUPYTER_ENABLE_LAB: yes
+      JUPYTER_TOKEN: jupyter123
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/home/jovyan/work
+    networks:
+      - db_network
+    restart: unless-stopped
+      
+volumes:
+  mongodb_volume:
+  postgres_volume:
+
+networks:
+  db_network:
+    driver: bridge
