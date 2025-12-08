@@ -28,3 +28,8 @@
 (не защищённый).
 
 Файлы для практического задания №4:  
+- [swim_sim.py](./swim_sim.py) – скрипт симуляции
+- [analyze.py](./analyze.py) - скрипт анализа
+- [run_experiments.sh](./run_experiments.sh) -  обернёт всё в батч и запустит по всем конфигурациям
+- [SWIM_convergence.ipynb](./SWIM_convergence.ipynb) - блокнот с результатами анализа по 4 заданию
+
